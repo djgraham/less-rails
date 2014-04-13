@@ -100,7 +100,7 @@ module Less
         
         def font_url(font)
           if scope.respond_to?(:font_path)
-            "url(#{scope.font_path(font)})"
+            "url('#{scope.font_path(font)}')"
           else
             asset_url(font)
           end
